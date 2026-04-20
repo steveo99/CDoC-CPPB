@@ -1,0 +1,77 @@
+"""Run 100 Days of Code development sandbox"""
+
+import warnings
+import importlib
+from dotenv import load_dotenv
+
+warnings.filterwarnings("ignore", category=UserWarning, module="langchain_core")
+
+# Load .env ONCE here — all submodules inherit it via os.getenv()
+load_dotenv()
+
+# ← Change this to switch projects
+PROJECT_LIST = {
+    "011l079": ("D11 L79", "d011", "d011l079.py"),
+    "010l076": ("D10 L76", "d010", "d010l076.py"),
+    # "009l070": ("D9 L70", "d009", "d009l070.py"),
+    # "009l069": ("D9 L69", "d009", "d009l069.py"),
+    # "009ex": ("D9 Ex9", "d009", "d009ex9.py"),
+    "Q": ("Quit", "", ""),
+}
+DEFAULT_PROJECT = "011l079"
+
+
+def run_project():
+    """
+    show the menu, prompt for a selection
+    if ans is empty, run the default project
+    if ans == 'q', exit
+    """
+    prompt = build_prompt(PROJECT_LIST)
+    ans = ""
+    while ans != "Q":
+        print()
+        ans = input(prompt).upper()
+        if ans == "Q":
+            return
+        if ans == "":
+            ans = DEFAULT_PROJECT
+        folder, file = get_selected_project(PROJECT_LIST, ans)
+        if folder == "":
+            print("invalid selection")
+            continue
+        print(f"{folder=}, {file=}")
+
+        try:
+            module = importlib.import_module(f"{folder}.run")
+            module.main(file)
+        except ModuleNotFoundError:
+            print(f"no 'run.py' found in subfolder: {folder}")
+        except AttributeError:
+            print(f"No main() function found in {folder}.run.py")
+
+
+def build_prompt(project_list):
+    """build a prompt menu from the project_list dictionary"""
+    lines = []
+    for key, (label, _, _) in project_list.items():
+        lines.append(f"{key}: {label}\n")
+    return "".join(lines)
+
+
+def find_by_key(items, search_key):
+    """find the search_key in the dictionary items"""
+    return items.get(search_key) or ("", "", "")
+
+
+def get_selected_project(project_list, selection):
+    """
+    return the folder and file portions of the project list value tuple
+    for the selected project
+    """
+    _, folder, file = find_by_key(project_list, selection)
+    return folder, file
+
+
+if __name__ == "__main__":
+    run_project()

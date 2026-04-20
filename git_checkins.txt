@@ -1,0 +1,61 @@
+Project: Udemy - 100 Days of Code: The Complete Python Pro Bootcamp
+Repo: CDoC-CPPB
+
+#########################################################################
+Git Checkins
+
+date: 
+#########################################################################
+
+Commit message:
+
+
+New Files:
+None
+
+Modified Files:	
+
+
+
+
+
+
+#########################################################################
+Git Checkins
+
+date: 4/20/2026
+#########################################################################
+
+Commit message: Initial commit (Days 9 - 11 and 70)
+
+New Files:
+    .gitignore
+    .vscode/launch.json
+    .vscode/settings.json
+    Resources/12 Rules to Learn to Code eBook-Copyright App Brewery.pdf
+    d009/__init__.py
+    d009/art.py
+    d009/d009ex9.py
+    d009/d009l069.py
+    d009/d009l070.py
+    d009/run.py
+    d010/__init__.py
+    d010/art.py
+    d010/d010l076.py
+    d010/run.py
+    d011/__init__.py
+    d011/art.py
+    d011/d011l079.py
+    d011/run.py
+    d070/Project
+    d070/Test/main.py
+    d070/Test/requirements.txt
+    git_checkins.txt
+    main.py
+
+Modified Files:	
+    none
+
+
+
+
