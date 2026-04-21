@@ -3,7 +3,6 @@ Repo: CDoC-CPPB
 
 #########################################################################
 Git Checkins
-
 date: 
 #########################################################################
 
@@ -19,6 +18,25 @@ Modified Files:
 
 
 
+
+#########################################################################
+Git Checkins
+date: 4/20/2026
+#########################################################################
+
+Commit message:
+
+
+New Files:
+None
+
+Modified Files:	
+- .gitignore
+Added a few more files to ignore
+- d011/d011l079.py
+Improvements to blackjack project
+- git_checkins.txt
+Day 11 changes. 
 
 #########################################################################
 Git Checkins

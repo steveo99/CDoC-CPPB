@@ -22,7 +22,8 @@ CARD_LIST = [
 
 def draw_card():
     """return a random card"""
-    return CARD_LIST[random.randint(0, len(CARD_LIST) - 1)]
+    # return CARD_LIST[random.randint(0, len(CARD_LIST) - 1)]
+    return random.choice(CARD_LIST)
 
 
 def show_hand(cards):
@@ -90,8 +91,8 @@ def play_game():
 
     print()
     while True:
-        print(f"Dealer: {show_hand(dealer)} = {get_hand_total(dealer)}")
         d = get_hand_total(dealer)
+        print(f"Dealer: {show_hand(dealer)} = {d}")
         if d < 17:
             dealer.append(draw_card())
             print(f"Dealer draws {dealer[-1]}")
