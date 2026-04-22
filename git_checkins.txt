@@ -21,10 +21,31 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 4/21/2026
+#########################################################################
+
+Commit message: day 12 - number guessing game 
+
+
+New Files:
+    d012/__init__.py
+    d012/art.py
+    d012/d012ex11.py
+    d012/d012l092.py
+    d012/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 12 changes
+- main.py
+add day 12 to menu
+
+#########################################################################
+Git Checkins
 date: 4/20/2026
 #########################################################################
 
-Commit message:
+Commit message: Improvements to Day 11 blackjack project
 
 
 New Files:

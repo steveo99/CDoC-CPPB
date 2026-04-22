@@ -11,6 +11,8 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "012l092": ("D12 L92", "d012", "d012l092.py"),
+    "012ex11": ("D12 Ex11", "d012", "d012ex11.py"),
     "011l079": ("D11 L79", "d011", "d011l079.py"),
     "010l076": ("D10 L76", "d010", "d010l076.py"),
     # "009l070": ("D9 L70", "d009", "d009l070.py"),
@@ -18,7 +20,7 @@ PROJECT_LIST = {
     # "009ex": ("D9 Ex9", "d009", "d009ex9.py"),
     "Q": ("Quit", "", ""),
 }
-DEFAULT_PROJECT = "011l079"
+DEFAULT_PROJECT = "012l092"
 
 
 def run_project():
@@ -29,26 +31,25 @@ def run_project():
     """
     prompt = build_prompt(PROJECT_LIST)
     ans = ""
-    while ans != "Q":
-        print()
-        ans = input(prompt).upper()
-        if ans == "Q":
-            return
-        if ans == "":
-            ans = DEFAULT_PROJECT
-        folder, file = get_selected_project(PROJECT_LIST, ans)
-        if folder == "":
-            print("invalid selection")
-            continue
-        print(f"{folder=}, {file=}")
+    print()
+    ans = input(prompt).upper()
+    if ans == "":
+        ans = DEFAULT_PROJECT
+    elif ans == "Q":
+        return
 
-        try:
-            module = importlib.import_module(f"{folder}.run")
-            module.main(file)
-        except ModuleNotFoundError:
-            print(f"no 'run.py' found in subfolder: {folder}")
-        except AttributeError:
-            print(f"No main() function found in {folder}.run.py")
+    folder, file = get_selected_project(PROJECT_LIST, ans)
+    if folder == "":
+        print("invalid selection")
+    print(f"{folder=}, {file=}")
+
+    try:
+        module = importlib.import_module(f"{folder}.run")
+        module.main(file)
+    except ModuleNotFoundError:
+        print(f"no 'run.py' found in subfolder: {folder}")
+    except AttributeError:
+        print(f"No main() function found in {folder}.run.py")
 
 
 def build_prompt(project_list):
