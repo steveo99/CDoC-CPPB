@@ -8,16 +8,31 @@ date:
 
 Commit message:
 
-
 New Files:
 None
 
 Modified Files:	
 
 
+#########################################################################
+Git Checkins
+date: 4/22/2026
+#########################################################################
 
+Commit message: day 14 - higher lower game
 
+New Files:
+    d014/__init__.py
+    d014/art.py
+    d014/d014l102.py
+    d014/game_data.py
+    d014/run.py
 
+Modified Files:	
+- git_checkins.txt
+day 14 changes
+- main.py
+add day 14 to menu
 
 #########################################################################
 Git Checkins
@@ -25,7 +40,6 @@ date: 4/21/2026
 #########################################################################
 
 Commit message: day 12 - number guessing game 
-
 
 New Files:
     d012/__init__.py
@@ -46,7 +60,6 @@ date: 4/20/2026
 #########################################################################
 
 Commit message: Improvements to Day 11 blackjack project
-
 
 New Files:
 None
@@ -94,7 +107,3 @@ New Files:
 
 Modified Files:	
     none
-
-
-
-

@@ -11,6 +11,7 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "014l102": ("D14 L102", "d014", "d014l102.py"),
     "012l092": ("D12 L92", "d012", "d012l092.py"),
     "012ex11": ("D12 Ex11", "d012", "d012ex11.py"),
     "011l079": ("D11 L79", "d011", "d011l079.py"),
@@ -20,7 +21,7 @@ PROJECT_LIST = {
     # "009ex": ("D9 Ex9", "d009", "d009ex9.py"),
     "Q": ("Quit", "", ""),
 }
-DEFAULT_PROJECT = "012l092"
+DEFAULT_PROJECT = "014l102"
 
 
 def run_project():
