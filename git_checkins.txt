@@ -9,10 +9,27 @@ date:
 Commit message:
 
 New Files:
-None
 
 Modified Files:	
 
+
+#########################################################################
+Git Checkins
+date: 4/24/2026
+#########################################################################
+
+Commit message: day 15 - coffe machine project
+
+New Files:
+    d015/__init__.py
+    d015/d015l105.py
+    d015/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 15 changes
+- main.py
+add day 15 to menu
 
 #########################################################################
 Git Checkins
