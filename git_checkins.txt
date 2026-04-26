@@ -15,10 +15,32 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 4/26/2026
+#########################################################################
+
+Commit message: day 16 - oop and oop coffee machine
+
+New Files:
+    d016/run.py
+    d016b/__init__.py
+    d016b/coffee_maker.py
+    d016b/d016bl113.py
+    d016b/menu.py
+    d016b/money_machine.py
+    d016b/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 16 changes
+- main.py
+add day 16 to menu
+
+#########################################################################
+Git Checkins
 date: 4/24/2026
 #########################################################################
 
-Commit message: day 15 - coffe machine project
+Commit message: day 15 - coffee machine project
 
 New Files:
     d015/__init__.py
