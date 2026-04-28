@@ -11,9 +11,11 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
-    "016bl113": ("D16b L113", "d016b", "d016bl113.py"),
-    "016l112": ("D16 L112", "d016", "d016l112.py"),
-    "016l110": ("D16 L110", "d016", "d016l110.py"),
+    "017ql120": ("D17q L120", "d017q", "d017ql120.py"),
+    "017l117": ("D17 L117", "d017", "d017l117.py"),
+    # "016bl113": ("D16b L113", "d016b", "d016bl113.py"),
+    # "016l112": ("D16 L112", "d016", "d016l112.py"),
+    # "016l110": ("D16 L110", "d016", "d016l110.py"),
     # "015l105": ("D15 L105", "d015", "d015l105.py"),
     # "014l102": ("D14 L102", "d014", "d014l102.py"),
     # "012l092": ("D12 L92", "d012", "d012l092.py"),
@@ -25,7 +27,21 @@ PROJECT_LIST = {
     # "009ex": ("D9 Ex9", "d009", "d009ex9.py"),
     "Q": ("Quit", "", ""),
 }
-DEFAULT_PROJECT = "016bl113"
+# put the key of the first dictionary item in DEFAULT_PROJECT
+DEFAULT_PROJECT = next(iter(PROJECT_LIST), None)
+
+
+def safe_input(prompt):
+    """
+    wrap input in a try-except to catch and retry if a KeyboardInterupt
+    error occurs on the input statement
+    """
+    while True:
+        try:
+            return input(prompt)
+        except KeyboardInterrupt:
+            print()
+            continue
 
 
 def run_project():
@@ -35,9 +51,7 @@ def run_project():
     if ans == 'q', exit
     """
     prompt = build_prompt(PROJECT_LIST)
-    ans = ""
-    print()
-    ans = input(prompt).upper()
+    ans = safe_input(prompt)
     if ans == "":
         ans = DEFAULT_PROJECT
     elif ans == "Q":

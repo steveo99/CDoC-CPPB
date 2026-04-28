@@ -15,6 +15,30 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 4/27/2026
+#########################################################################
+
+Commit message: day 17 - quiz game project
+
+New Files:
+    d017/__init__.py
+    d017/d017l117.py
+    d017/run.py
+    d017q/__init__.py
+    d017q/d017ql120.py
+    d017q/data.py
+    d017q/question_model.py
+    d017q/quiz_brain.py
+    d017q/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 17 changes
+- main.py
+add day 17 to menu
+
+#########################################################################
+Git Checkins
 date: 4/26/2026
 #########################################################################
 
