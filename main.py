@@ -11,6 +11,9 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "018l137": ("D18 L137", "d018", "d018l137.py"),
+    "018l136": ("D18 L136", "d018", "d018l136.py"),
+    "018l129": ("D18 L129", "d018", "d018l129.py"),
     "017ql120": ("D17q L120", "d017q", "d017ql120.py"),
     "017l117": ("D17 L117", "d017", "d017l117.py"),
     # "016bl113": ("D16b L113", "d016b", "d016bl113.py"),

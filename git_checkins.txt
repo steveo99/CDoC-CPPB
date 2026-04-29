@@ -15,6 +15,27 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 4/29/2026
+#########################################################################
+
+Commit message: day 18 - turtle challange, hirst painting project
+
+New Files:
+d018/__init__.py
+d018/d018l129.py
+d018/d018l136.py
+d018/d018l137.py
+d018/image.jpg
+d018/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 18 changes
+- main.py
+add day 18 to menu
+
+#########################################################################
+Git Checkins
 date: 4/27/2026
 #########################################################################
 
