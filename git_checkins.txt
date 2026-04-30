@@ -15,6 +15,25 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 4/30/2026
+#########################################################################
+
+Commit message: day 19 - etch-a-sketch and turtle race projects
+
+New Files:
+    d019/__init__.py
+    d019/d019l140.py
+    d019/d019l143.py
+    d019/run.py
+
+Modified Files:	
+- git_checkins.txt
+day 19 changes    
+- main.py
+add day 19 to menu
+
+#########################################################################
+Git Checkins
 date: 4/29/2026
 #########################################################################
 
