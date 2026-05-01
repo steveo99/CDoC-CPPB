@@ -11,12 +11,14 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "020l149": ("D20 L149 OOP snake program", "d020", "d020l149.py"),
+    "020l147": ("D20 L147 snake program", "d020", "d020l147.py"),
     "019l143": ("D19 L143", "d019", "d019l143.py"),
     "019l140": ("D19 L140", "d019", "d019l140.py"),
-    "018l137": ("D18 L137", "d018", "d018l137.py"),
-    "018l136": ("D18 L136", "d018", "d018l136.py"),
-    "018l129": ("D18 L129", "d018", "d018l129.py"),
-    # "017ql120": ("D17q L120", "d017q", "d017ql120.py"),
+    # "018l137": ("D18 L137", "d018", "d018l137.py"),
+    # "018l136": ("D18 L136", "d018", "d018l136.py"),
+    # "018l129": ("D18 L129", "d018", "d018l129.py"),
+    # # "017ql120": ("D17q L120", "d017q", "d017ql120.py"),
     # "017l117": ("D17 L117", "d017", "d017l117.py"),
     # "016bl113": ("D16b L113", "d016b", "d016bl113.py"),
     # "016l112": ("D16 L112", "d016", "d016l112.py"),
@@ -56,10 +58,11 @@ def run_project():
     if ans == 'q', exit
     """
     prompt = build_prompt(PROJECT_LIST)
-    ans = safe_input(prompt)
+    ans = safe_input(prompt).lower()
+    print(ans)
     if ans == "":
         ans = DEFAULT_PROJECT
-    elif ans == "Q":
+    elif ans == "q":
         return
 
     folder, file = get_selected_project(PROJECT_LIST, ans)
