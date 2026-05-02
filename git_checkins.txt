@@ -15,6 +15,28 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 5/2/2026
+#########################################################################
+
+Commit message: day 21 - snake game part 2
+
+New Files:
+    d021/__init__.py
+    d021/d021l154.py
+    d021/food.py
+    d021/run.py
+    d021/scoreboard.py
+    d021/snake.py
+
+Modified Files:	
+- git_checkins.txt
+day 21 changes
+- main.py
+add day 21 to the menu
+
+
+#########################################################################
+Git Checkins
 date: 5/1/2026
 #########################################################################
 

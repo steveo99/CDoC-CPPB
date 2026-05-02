@@ -11,10 +11,11 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "021l154": ("D21 L154 OOP snake program part 2", "d021", "d021l154.py"),
     "020l149": ("D20 L149 OOP snake program", "d020", "d020l149.py"),
     "020l147": ("D20 L147 snake program", "d020", "d020l147.py"),
-    "019l143": ("D19 L143", "d019", "d019l143.py"),
-    "019l140": ("D19 L140", "d019", "d019l140.py"),
+    # "019l143": ("D19 L143", "d019", "d019l143.py"),
+    # "019l140": ("D19 L140", "d019", "d019l140.py"),
     # "018l137": ("D18 L137", "d018", "d018l137.py"),
     # "018l136": ("D18 L136", "d018", "d018l136.py"),
     # "018l129": ("D18 L129", "d018", "d018l129.py"),
@@ -59,7 +60,7 @@ def run_project():
     """
     prompt = build_prompt(PROJECT_LIST)
     ans = safe_input(prompt).lower()
-    print(ans)
+    # print(ans)
     if ans == "":
         ans = DEFAULT_PROJECT
     elif ans == "q":
@@ -77,6 +78,8 @@ def run_project():
         print(f"no 'run.py' found in subfolder: {folder}")
     except AttributeError:
         print(f"No main() function found in {folder}.run.py")
+    # except TypeError:
+    #     print("Exception has occurred: TypeError")
 
 
 def build_prompt(project_list):
