@@ -55,7 +55,6 @@ def main():
     food = Food()
     scoreboard = Scoreboard()
 
-    move = 0
     game_on = True
     while game_on:
         screen.update()
