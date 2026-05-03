@@ -10,31 +10,6 @@ from d021.food import Food
 from d021.scoreboard import Scoreboard
 
 
-def direction_up(snake: Snake):
-    """change the direction of the snake to up"""
-    snake.up()
-
-
-def direction_down(snake: Snake):
-    """change the direction of the snake to up"""
-    snake.down()
-
-
-def direction_left(snake: Snake):
-    """change the direction of the snake to up"""
-    snake.left()
-
-
-def direction_right(snake: Snake):
-    """change the direction of the snake to up"""
-    snake.right()
-
-
-# def change_direction(snake: Snake, direction: str):
-#     """change the direction of the snake"""
-#     snake.change_direction(new_direction=direction)
-
-
 def main():
     """
     Code for Day 21 Lesson 154
@@ -48,10 +23,11 @@ def main():
     screen.tracer(0)
     delay = 0.12
     snake = Snake(3)
-    screen.onkey(lambda: direction_up(snake), "Up")
-    screen.onkey(lambda: direction_down(snake), "Down")
-    screen.onkey(lambda: direction_left(snake), "Left")
-    screen.onkey(lambda: direction_right(snake), "Right")
+    screen.onkey(snake.up, "Up")
+    screen.onkey(snake.down, "Down")
+    screen.onkey(snake.left, "Left")
+    screen.onkey(snake.right, "Right")
+
     food = Food()
     scoreboard = Scoreboard()
 

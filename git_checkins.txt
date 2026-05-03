@@ -15,6 +15,22 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 5/3/26
+#########################################################################
+
+Commit message: better way to call snake methods in onkey events
+
+New Files:
+None
+
+Modified Files:	
+- d021/d021l154.py
+better way to call snake methods in onkey events
+- git_checkins.txt
+day 21 improvements
+
+#########################################################################
+Git Checkins
 date: 5/2/2026
 #########################################################################
 
