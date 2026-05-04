@@ -13,6 +13,30 @@ New Files:
 Modified Files:	
 
 
+Project: Udemy - 100 Days of Code: The Complete Python Pro Bootcamp
+Repo: CDoC-CPPB
+
+#########################################################################
+Git Checkins
+date: 5/4/2026
+#########################################################################
+
+Commit message: day 22 - Pong game
+
+New Files:
+    d022/__init__.py
+    d022/ball.py
+    d022/paddle.py
+    d022/pong_game.py
+    d022/run.py
+    d022/scoreboard.py
+        
+Modified Files:	
+- git_checkins.txt
+day 22 changes
+- main.py
+add day 22 to menu
+
 #########################################################################
 Git Checkins
 date: 5/3/26
