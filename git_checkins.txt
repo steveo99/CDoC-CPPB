@@ -13,8 +13,26 @@ New Files:
 Modified Files:	
 
 
-Project: Udemy - 100 Days of Code: The Complete Python Pro Bootcamp
-Repo: CDoC-CPPB
+#########################################################################
+Git Checkins
+date: 5/5/2026
+#########################################################################
+
+Commit message: day 23 - turtle game
+
+New Files:
+   d023/__init__.py
+   d023/car_manager.py
+   d023/player.py
+   d023/run.py
+   d023/scoreboard.py
+   d023/turtle_game.py
+
+Modified Files:	
+- git_checkins.txt
+day 23 changes
+- main.py
+add day 23 to menu
 
 #########################################################################
 Git Checkins
