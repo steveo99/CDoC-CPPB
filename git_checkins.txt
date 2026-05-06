@@ -18,6 +18,24 @@ Git Checkins
 date: 5/6/2026
 #########################################################################
 
+Commit message: day 24 lesson 186 mail merge project
+
+New Files:
+    d024/mailmerge.py
+
+Modified Files:	
+- d024/run.py
+add d024/mailmerge.py
+- git_checkins.txt
+day 24 mailmerge project changes
+- main.py
+add mailmerge project to menu
+
+#########################################################################
+Git Checkins
+date: 5/6/2026
+#########################################################################
+
 Commit message: day 24 lesson 183 changes
 
 New Files:
