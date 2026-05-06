@@ -1,5 +1,9 @@
 # from https://github.com/github/gitignore
 
+d024/Input
+d024/Output
+d024/my_file.txt
+d024/new_file.txt
 d021/data.txt
 
 # Byte-compiled / optimized / DLL files

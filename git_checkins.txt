@@ -18,6 +18,26 @@ Git Checkins
 date: 5/6/2026
 #########################################################################
 
+Commit message: day 24 lesson 183 changes
+
+New Files:
+    d024/__init__.py
+    d024/d024l183.py
+    d024/run.py
+
+Modified Files:	
+- .gitignore
+ignore d024/Input and d024/Output
+- git_checkins.txt
+day 24 lesson 183 changes
+- main.py
+add day 24 lesson 183 to menu
+
+#########################################################################
+Git Checkins
+date: 5/6/2026
+#########################################################################
+
 Commit message: add high score to day 21 snake game
 
 New Files:
