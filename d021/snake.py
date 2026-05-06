@@ -49,6 +49,15 @@ class Snake:
         self.add_segment(tail_pos)
         print(f"Segments={len(self.segments)}")
 
+    def reset(self):
+        """reset snake"""
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake(3)
+        self.head = self.segments[0]
+        self.move_number = 0
+
     def up(self):
         """turn the snake up if not going down"""
         if self.head.heading() != DOWN:

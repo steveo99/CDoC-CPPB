@@ -11,9 +11,9 @@ load_dotenv()
 
 # ← Change this to switch projects
 PROJECT_LIST = {
+    "021l154": ("D21 L154 OOP snake program part 2", "d021", "d021l154.py"),
     "023l171": ("D23 L171 turtle game", "d023", "turtle_game.py"),
     "022l161": ("D22 L161 pong game", "d022", "pong_game.py"),
-    "021l154": ("D21 L154 OOP snake program part 2", "d021", "d021l154.py"),
     # "020l149": ("D20 L149 OOP snake program", "d020", "d020l149.py"),
     # "020l147": ("D20 L147 snake program", "d020", "d020l147.py"),
     # "019l143": ("D19 L143", "d019", "d019l143.py"),

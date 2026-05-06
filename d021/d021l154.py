@@ -15,6 +15,12 @@ def main():
     Code for Day 21 Lesson 154
     snake program using OOP part 2
     """
+    game_on = True
+
+    def end_the_game():
+        nonlocal game_on
+        game_on = False
+
     screen = Screen()
     screen.setup(width=600, height=600)
     screen.bgcolor("black")
@@ -27,11 +33,11 @@ def main():
     screen.onkey(snake.down, "Down")
     screen.onkey(snake.left, "Left")
     screen.onkey(snake.right, "Right")
+    screen.onkey(end_the_game, "q")
 
     food = Food()
     scoreboard = Scoreboard()
 
-    game_on = True
     while game_on:
         screen.update()
         time.sleep(delay)
@@ -50,8 +56,8 @@ def main():
             print(f"{snake.move_number=}: {delay=}")
 
         if snake.check_for_game_over():
-            game_on = False
-            scoreboard.game_over()
+            scoreboard.reset()
+            snake.reset()
 
     screen.exitonclick()
 

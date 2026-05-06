@@ -15,6 +15,28 @@ Modified Files:
 
 #########################################################################
 Git Checkins
+date: 5/6/2026
+#########################################################################
+
+Commit message: add high score to day 21 snake game
+
+New Files:
+none
+
+Modified Files:	
+- .gitignore
+ignore the d021/data.txt file
+- d021/d021l154.py
+changes to implement saving high score
+- d021/scoreboard.py
+changes to implement saving high score
+- d021/snake.py
+changes to implement saving high score
+- main.py
+move d021 to top of project list
+
+#########################################################################
+Git Checkins
 date: 5/5/2026
 #########################################################################
 

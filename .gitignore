@@ -1,5 +1,7 @@
 # from https://github.com/github/gitignore
 
+d021/data.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
